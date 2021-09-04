@@ -1,0 +1,1 @@
+docker run -p 49162:8080 -d  -v /home/bka/data/:/data/ --env APP_NAME=backend basska/node-app:latest
