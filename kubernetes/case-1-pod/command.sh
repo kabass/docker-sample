@@ -1,0 +1,1 @@
+minikube kubectl -- $1 -f kubernetes/case-1-pod/pod.yaml

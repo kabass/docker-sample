@@ -1,0 +1,1 @@
+minikube kubectl -- $1 -f kubernetes/case-3-deployment/deployment.yaml

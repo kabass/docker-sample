@@ -1,0 +1,21 @@
+0) Décrire le projet à builder
+1) Montrer l'état de l'environnement
+   docker images => pour les images
+   docker ps => pour les conteneurs
+
+2) Builder l'image node-app et montrer le fonctionnement du build
+   sh script/build.sh
+   docker images
+3) Runner l'image docker
+   sh scripts/run.sh
+   docker ps
+   http://localhost:40000
+4) Montrer le bon fonctionnement du mapping de volume
+    - Mofifier le fichier dans le host
+    - http://localhost:40000
+
+5)  Montrer l'utilisation de docker push et pull
+    - Montrer l'état du registry dockerhub basska
+    - Pusher l'image builder : sh script/push.sh
+    - Montrer l'image dans dockerhub
+    - Télécharger l'image en local : docker pull basska/node-app:v1

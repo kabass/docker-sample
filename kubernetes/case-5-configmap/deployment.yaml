@@ -20,14 +20,14 @@ spec:
           image: basska/node-app:v1
           env:
             - name: APP_NAME
-                valueFrom:
-                  configMapKeyRef:
-                    name: node-app-cm
-                    key: APP_NAME_FROM_CM
+              valueFrom:
+                configMapKeyRef:
+                  name: node-app-cm
+                  key: APP_NAME_FROM_CM
           volumeMounts:
             - name: app-storage
               mountPath: /data
-  volumes:
-    - name: app-storage
-      hostPath:
-        path: /data/gs2e-vol
+      volumes:
+        - name: app-storage
+          hostPath:
+            path: /data/gs2e-vol

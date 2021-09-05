@@ -1,0 +1,1 @@
+minikube kubectl -- $1 -f kubernetes/case-0-namespace/namespace.yaml
