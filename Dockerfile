@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:lts-alpine3.13
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -16,8 +16,6 @@ RUN mkdir /data
 
 # Bundle app source
 COPY . .
-COPY  test.txt /data/
-RUN echo "bass" > /data/test.txt
-RUN cat /data/test.txt
+
 EXPOSE 8080
 CMD [ "node", "server.js" ]

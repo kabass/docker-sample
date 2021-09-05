@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: node-app-cm
+  namespace: gs2e-training
+data:
+  APP_NAME_FROM_CM: node-gs2e-app-from-cm

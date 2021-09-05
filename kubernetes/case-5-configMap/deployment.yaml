@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-app-dp
+  namespace: gs2e-training
+spec:
+  selector:
+    matchLabels:
+      app: node
+      env: dev
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: node
+        env: dev
+    spec:
+      containers:
+        - name: node
+          image: basska/node-app:v1
+          env:
+            - name: APP_NAME
+                valueFrom:
+                  configMapKeyRef:
+                    name: node-app-cm
+                    key: APP_NAME_FROM_CM
+          volumeMounts:
+            - name: app-storage
+              mountPath: /data
+  volumes:
+    - name: app-storage
+      hostPath:
+        path: /data/gs2e-vol

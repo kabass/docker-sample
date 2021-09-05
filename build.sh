@@ -1,1 +1,0 @@
-docker build -t basska/node-app:latest .
