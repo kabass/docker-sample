@@ -18,4 +18,5 @@ RUN mkdir /data
 COPY . .
 
 EXPOSE 8080
-CMD [ "node", "server.js" ]
+EXPOSE 8081
+CMD [ "node", "server-api.js" ]
