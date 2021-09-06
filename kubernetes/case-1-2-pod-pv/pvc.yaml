@@ -13,4 +13,4 @@ spec:
   storageClassName: web-class
   selector:
     matchLabels:
-      env: "dev"
+      env: dev
