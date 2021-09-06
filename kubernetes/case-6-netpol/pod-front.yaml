@@ -10,7 +10,7 @@ metadata:
 spec:
   containers:
   - name: node
-    image: basska/node-app:v1
+    image: basska/node-app:v2
     command: ["node", "server-front.js"]
     env:
     - name: API_URL

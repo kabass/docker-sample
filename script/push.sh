@@ -1,1 +1,1 @@
-docker push  basska/node-app:v1
+docker push  basska/node-app:v2

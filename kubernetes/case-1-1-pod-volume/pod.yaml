@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: node
-    image: basska/node-app:v1
+    image: basska/node-app:v2
     env:
     - name: APP_NAME
       value: "node-gs2e-app"

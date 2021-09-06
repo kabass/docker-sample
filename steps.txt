@@ -18,4 +18,4 @@
     - Montrer l'état du registry dockerhub basska
     - Pusher l'image builder : sh script/push.sh
     - Montrer l'image dans dockerhub
-    - Télécharger l'image en local : docker pull basska/node-app:v1
+    - Télécharger l'image en local : docker pull basska/node-app:v2

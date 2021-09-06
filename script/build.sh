@@ -1,1 +1,1 @@
-docker build -t basska/node-app:v1 .
+docker build -t basska/node-app:v2 .
