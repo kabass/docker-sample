@@ -13,3 +13,4 @@ spec:
   selector:
     app: node
     env: dev
+    tier: back

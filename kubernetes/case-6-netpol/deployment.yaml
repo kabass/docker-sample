@@ -8,12 +8,14 @@ spec:
     matchLabels:
       app: node
       env: dev
+      tier: back
   replicas: 3
   template:
     metadata:
       labels:
         app: node
         env: dev
+        tier: back
     spec:
       containers:
         - name: node
