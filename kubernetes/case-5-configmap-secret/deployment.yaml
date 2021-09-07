@@ -8,13 +8,18 @@ spec:
     matchLabels:
       app: node
       env: dev
-  replicas: 3
+  replicas: 4
   template:
     metadata:
       labels:
         app: node
         env: dev
     spec:
+      strategy:
+        type: RollingUpdate
+        rollingUpdate:
+          maxSurge: 25%
+          maxUnavailable: 25%
       containers:
         - name: node
           image: basska/node-app:v2.0
